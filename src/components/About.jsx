@@ -30,6 +30,7 @@ const About = () => {
       }
     >
       <div
+      id="about"
         className="flex w-full items-center md:items-start justify-between  flex-col-reverse md:flex-row px-4 gap-10 sm:px-7 md:px-[10%] lg:px-[12%]  relative"
       >
         <div className="content w-full md:w-[50%]  flex flex-col items-start gap-4 lg:gap-6 ">

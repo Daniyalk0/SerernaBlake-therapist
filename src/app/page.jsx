@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Rates from "@/components/Rates";
+import ReviewsSection from "@/components/Review";
 import Services from "@/components/Services";
 import React from "react";
 
@@ -15,6 +16,7 @@ const page = () => {
       <About />
       <Services/>
       <FAQ/>
+      <ReviewsSection/>
       <Rates/>
       <Contact/>
       <Footer/>

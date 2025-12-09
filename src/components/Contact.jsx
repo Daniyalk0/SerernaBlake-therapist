@@ -82,7 +82,7 @@ const Contact = () => {
         "bg-[#F3F0E8] py-24 flex flex-col-reverse sm:flex-row items-center sm:items-start justify-between md:justify-around lg:justify-evenly  sm:px-5 "
       }
     >
-      <div className="contact w-full text-[#30303f] font-freightdisplay2 flex flex-col items-center justify-center sm:items-start sm:justify-start my-12 gap-6 sm:w-[40%] md:w-[30%]">
+      <div id="contact" className="contact w-full text-[#30303f] font-freightdisplay2 flex flex-col items-center justify-center sm:items-start sm:justify-start my-12 gap-6 sm:w-[40%] md:w-[30%]">
         {/* Heading */}
         <InViewMotion
           variants={childVariants}

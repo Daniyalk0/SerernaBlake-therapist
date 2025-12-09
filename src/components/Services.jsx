@@ -16,7 +16,7 @@ const Services = () => {
 
   return (
     <Container className={"bg-[#F3F0E8]  "}>
-      <div className=" text-[#41413F] text-center  flex flex-col gap-6">
+      <div className=" text-[#41413F] text-center  flex flex-col gap-6" >
         <div className="w-full h-[1px] bg-[#7e7e6bb7] relative -top-14"></div>
         <div className="py-18 lg:py-[3rem] flex flex-col gap-6">
           <InViewMotion
@@ -43,7 +43,7 @@ const Services = () => {
         <div className="w-full h-[1px] bg-[#7e7e6bb7] relative top-14"></div>
       </div>
 
-      <div className="min-h-screen text-[#41413F]  px-6">
+      <div className="min-h-screen text-[#41413F]  px-6" id="services">
         <InViewMotion
           variants={childVariants}
           as="h1"
