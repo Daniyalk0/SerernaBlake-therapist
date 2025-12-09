@@ -89,8 +89,8 @@ const childVariants = {
 
 export default function ReviewsSection() {
   return (
-    <section className="py-16  bg-gray-50">
-      <div className="max-w-5xl mx-auto px-5 text-[#41413F] overflow-x-auto">
+    <section className="py-6  bg-gray-50">
+      <div className="max-w-5xl  mx-auto px-2 text-[#41413F] overflow-x-auto">
         <InViewMotion
           variants={childVariants}
           as="h1"
@@ -100,43 +100,54 @@ export default function ReviewsSection() {
         </InViewMotion>
 
         {/* Scrollable reviews container */}
-        <Swiper
-          spaceBetween={30} // gap between slides
-          slidesPerView={"auto"} // auto width slides
-          grabCursor={true} // cursor changes to grab on desktop
-          freeMode={true} // smooth free scroll
-        >
-          {reviews.map((review, index) => (
-            <SwiperSlide
-              key={review.name}
-              style={{ width: "300px", overflow: "visible" }} // allow shadow to show
-            >
-              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow border border-gray-100 h-[200px] flex flex-col justify-between select-none">
-                {/* Header */}
-                <div className="flex items-center gap-3 mb-4">
-                  <FaUserCircle className="text-gray-400 text-4xl" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900 font-playfair2">
-                      {review.name}
-                    </h4>
-                    <p className="text-sm text-gray-500">{review.date}</p>
-                  </div>
-                </div>
+      <Swiper
+  spaceBetween={20}
+  grabCursor={true}
+  freeMode={true}
+  centeredSlides={true}        // Important for centering
+  breakpoints={{
+    0: {
+      slidesPerView: 1,
+      centeredSlides: true,
+    },
+    640: {
+      slidesPerView: "auto",
+      centeredSlides: false,
+    },
+  }}
+>
+  {reviews.map((review) => (
+    <SwiperSlide
+      key={review.name}
+      className="p-4"
+      style={{
+        width: "320px", // keep this for large screens
+      }}
+    >
+      <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow border border-gray-100 h-[200px] flex flex-col justify-between select-none">
+        <div className="flex items-center gap-3 mb-3">
+          <FaUserCircle className="text-gray-400 text-4xl" />
+          <div>
+            <h4 className="font-semibold text-gray-900 font-playfair2">
+              {review.name}
+            </h4>
+            <p className="text-sm text-gray-500">{review.date}</p>
+          </div>
+        </div>
 
-                {/* Stars */}
-                <div className="text-yellow-500 mb-3 text-lg">
-                  {"★".repeat(review.rating)}
-                  {"☆".repeat(5 - review.rating)}
-                </div>
+        <div className="text-yellow-500 mb-1 text-lg">
+          {"★".repeat(review.rating)}
+          {"☆".repeat(5 - review.rating)}
+        </div>
 
-                {/* Message */}
-                <p className="text-gray-700 text-sm leading-relaxed ">
-                  {review.message}
-                </p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <p className="text-gray-700 text-sm leading-relaxed ">
+          {review.message}
+        </p>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
       </div>
     </section>
   );
