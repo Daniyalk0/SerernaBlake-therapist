@@ -87,34 +87,38 @@ const Contact = () => {
         <InViewMotion
           variants={childVariants}
           as="h1" className="text-2xl md:text-3xl lg:text-4xl lg:leading-tight text-center sm:text-left">
-          Dr. Serena Blake, PsyD (Clinical Psychologist)
+          Dr. Your name (your specialization)
         </InViewMotion>
 
         {/* Contact Info */}
         <InViewMotion
           variants={childVariants}
           as="div" className="flex flex-col gap-2 items-center sm:items-start text-center sm:text-left lg:text-xl">
-          <p className="underline">serena@blakepsychology.com</p>
-          <p>Phone: (323) 555-0192</p>
+          <p className="underline">example@gmail.com</p>
+          <p>Phone: 919999999999</p>
         </InViewMotion>
 
         {/* Address */}
-         <InViewMotion
-          variants={childVariants}
-          as="p" className="text-center sm:text-left lg:text-xl">
-          1287 Maplewood Drive, Los Angeles, CA 90026
-        </InViewMotion>
+       <InViewMotion
+  variants={childVariants}
+  as="p"
+  className="text-center sm:text-left lg:text-xl"
+>
+  123 Your Clinic Street, Your City, State 000000
+</InViewMotion>
 
-        {/* Office Hours */}
-        <InViewMotion
-          variants={childVariants}
-          as="div" className="flex flex-col items-center sm:items-start text-center sm:text-left">
-          <h1 className="text-lg sm:text-xl md:text-2xl">Office Hours</h1>
-          <p className="lg:text-xl">In-person: Tue & Thu, 10 AM–6 PM</p>
-          <p className="lg:text-xl">
-            Virtual via Zoom: Mon, Wed & Fri, 1 PM–5 PM
-          </p>
-        </InViewMotion>
+{/* Office Hours */}
+<InViewMotion
+  variants={childVariants}
+  as="div"
+  className="flex flex-col items-center sm:items-start text-center sm:text-left"
+>
+  <h1 className="text-lg sm:text-xl md:text-2xl">Working Hours</h1>
+  <p className="lg:text-xl">Monday – Friday: 10:00 AM – 6:00 PM</p>
+  <p className="lg:text-xl">Saturday: 10:00 AM – 2:00 PM</p>
+  <p className="lg:text-xl">Sunday: Closed</p>
+</InViewMotion>
+
       </div>
 
       <div

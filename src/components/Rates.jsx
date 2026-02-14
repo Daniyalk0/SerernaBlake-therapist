@@ -24,12 +24,12 @@ const Rates = () => {
           as="div"
           className="flex font-freightdisplay2 flex-col items-center justify-center gap-2"
         >
-          <p className="mb-2 text-xl md:text-3xl lg:mb-6">Session Fee -</p>
+          <p className="mb-2 text-xl md:text-3xl lg:mb-6">Consultation Fees -</p>
           <p className="font-freightdisplay2 md:text-xl">
-            $200 / individual session
+            ₹1,500 / Individual Session
           </p>
           <p className="font-freightdisplay2 md:text-xl">
-            $240 / couples session
+           ₹2,500 / Couple or Family Session
           </p>
         </InViewMotion>
       </Container>
@@ -39,7 +39,8 @@ const Rates = () => {
         >
           <InViewMotion
           variants={childVariants}
-          as="div">Unable to accept new clients at this time.</InViewMotion>
+          as="div">Now Accepting New Appointments
+Flexible scheduling available.</InViewMotion>
         </div>
         <div className="relative h-[400px] w-full ">
           {/* Background Image */}
@@ -55,15 +56,14 @@ const Rates = () => {
               as="h1"
               className="text-2xl font-freightdisplay2 text-center md:text-3xl lg:text-4xl lg:leading-tight"
             >
-              “I have come to believe that caring for myself is not
-              self-indulgent. Caring for myself is an act of survival.”
+             “Taking the first step toward care is a sign of strength, not weakness.”
             </InViewMotion>
             <InViewMotion
               variants={childVariants}
               as="p"
               className="font-freightdisplay2 md:text-lg"
             >
-              —Audre Lorde
+              — Your Clinic Name
             </InViewMotion>
           </div>
         </div>

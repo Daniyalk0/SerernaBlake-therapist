@@ -15,13 +15,14 @@ const About = () => {
     },
   };
 
-  const aboutDrBlake = [
-    "Dr. Serena Blake is a licensed clinical psychologist based in Los Angeles, CA, with over eight years of dedicated practice and more than 500 successful client sessions. Known for her compassionate and thoughtful approach, Dr. Blake integrates evidence-based therapies—such as cognitive-behavioral therapy (CBT) and mindfulness practices—with personalized care tailored to each individual’s goals and challenges.",
+const aboutClinic = [
+  "Our practice is led by a licensed mental health professional with years of clinical experience supporting individuals, couples, and families. We combine evidence-based approaches such as cognitive-behavioral therapy (CBT), mindfulness techniques, and solution-focused strategies to provide practical, goal-oriented care tailored to each client.",
 
-    "Her work centers around helping people navigate life’s most difficult emotional experiences. Whether you're struggling with chronic anxiety, relationship issues, or the deep wounds left by past trauma, Dr. Blake offers a safe and non-judgmental space for healing and growth. She is passionate about empowering her clients with practical tools and emotional insight to build resilience, improve communication, and create meaningful change.",
+  "We specialize in helping individuals manage anxiety, stress, relationship challenges, emotional burnout, and the impact of past experiences. Sessions are conducted in a confidential, respectful, and non-judgmental environment designed to promote clarity, resilience, and long-term emotional well-being.",
 
-    "Dr. Blake provides both in-person sessions at her welcoming Maplewood Drive office and convenient virtual sessions via Zoom, making therapy accessible and flexible to fit your lifestyle. Her commitment is simple yet profound: to walk beside you with care, clarity, and support as you work toward a more balanced, fulfilling life.",
-  ];
+  "Appointments are available both in person and through secure virtual sessions, offering flexibility to fit your schedule. Our focus is to provide structured guidance and consistent support as you work toward meaningful personal growth and improved mental health."
+];
+
 
   return (
     <Container
@@ -35,11 +36,11 @@ const About = () => {
       >
         <div className="content w-full md:w-[50%]  flex flex-col items-start gap-4 lg:gap-6 ">
            <InViewMotion variants={childVariants} as="h1" className="hidden md:block font-playfair2 text-3xl lg:text-[2.2rem] font-[600]">
-            About Dr. Serena Blake
+            About Dr. (your name)
           </InViewMotion>
 
-          <motion.section className="font-freightdisplay2 sm:text-[1rem] md:text-[1.05rem] xl:text-[1rem] gap-5 text-[1rem] leading-8 flex items-start flex-col text-[#7e7e6b] fake-bold">
-            {aboutDrBlake.map((text, index) => (
+          <motion.section className="font-freightdisplay2 sm:text-[1rem] md:text-[1.05rem] xl:text-[1.1rem] gap-5 text-[1rem] leading-8 flex items-start flex-col text-[#4b4b3e] fake-bold">
+            {aboutClinic.map((text, index) => (
                 <InViewMotion variants={childVariants} as="h2" key={index}>
                 {text}
               </InViewMotion>
@@ -47,13 +48,25 @@ const About = () => {
           </motion.section>
         </div>
           <InViewMotion variants={childVariants}>
-          <Image
-            src="/girlImage.jpg"
-            width={500}
-            height={200}
-            alt="Doctor Image"
-            className="w-[20rem] md:w-[30vw] lg:w-[20rem] xl:w-[23rem] md:mt-8"
-          />
+         <div className="relative w-[20rem] md:w-[30vw] lg:w-[20rem] xl:w-[23rem] md:mt-8">
+  
+  <Image
+    src="/girlImage.jpg"
+    width={500}
+    height={200}
+    alt="Doctor Image"
+    className="w-full h-auto"
+  />
+
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
+    <span className="text-white text-lg md:text-2xl font-semibold tracking-wide">
+      Your Photo Here
+    </span>
+  </div>
+
+</div>
+
         </InViewMotion>
 
        <InViewMotion variants={childVariants} as="h1"

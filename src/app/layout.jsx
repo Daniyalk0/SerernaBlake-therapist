@@ -3,6 +3,28 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import localFont from "next/font/local";
 
+
+export const metadata = {
+  title: "Healthcare Website Template | Therapist & Clinic Demo",
+  description:
+    "Professional, responsive healthcare website template designed for therapists, clinics, and mental health professionals.",
+  openGraph: {
+    title: "Healthcare Website Template Demo",
+    description:
+      "Modern responsive website for therapists and clinics.",
+    type: "website",
+  },
+  icons: {
+  icon: "/favicon.ico",
+},
+metadataBase: new URL("https://sererna-blake-therapist-assignment.vercel.app/"),
+alternates: {
+  canonical: "/",
+},
+
+
+};
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -69,10 +91,6 @@ const freightDisplayLight2 = localFont({
   display: "swap",
 });
 
-export const metadata = {
-  title: "Serena Blake",
-  description: "Therapist",
-};
 
 export default function RootLayout({ children }) {
   return (

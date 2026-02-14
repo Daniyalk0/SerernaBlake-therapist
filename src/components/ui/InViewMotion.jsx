@@ -17,6 +17,7 @@ const InViewMotion = ({ children, variants, as = "div", className = "", ...rest 
       animate={inView ? "visible" : "hidden"}
       variants={variants}
       className={className}
+      
       {...rest}
     >
       {children}

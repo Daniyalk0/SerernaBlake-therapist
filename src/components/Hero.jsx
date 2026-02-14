@@ -47,19 +47,19 @@ const Hero = () => {
                 as="h2"
                 className="text-lg sm:text-xl md:text-2xl max-w-2xl mb-6  font-freightdisplay2 "
               >
-                Dr. Serena Blake brings 8+ years of experience and 500+
-                sessions, combining proven therapy with compassionate care to
-                help you heal, grow, and connect — in-person or online.
+               Our licensed mental health professional brings years of clinical experience, combining evidence-based therapy with compassionate care to support healing, growth, and meaningful change — available both in person and online.
               </InViewMotion>
             </div>
+<a href="#contact">
+  <InViewMotion
+    variants={childVariants}
+    as="h2"
+    className="w-64 h-20 bg-[#94b0b0b0] [clip-path:ellipse(40%_50%_at_50%_50%)] flex items-center justify-center text-center font-semibold font-freightdisplay2 cursor-pointer"
+  >
+    Book a free consultation
+  </InViewMotion>
+</a>
 
-            <InViewMotion
-              variants={childVariants}
-              as="h2"
-              className="w-64 h-20 bg-[#94b0b0b0] [clip-path:ellipse(40%_50%_at_50%_50%)] flex items-center justify-center text-center font-semibold  font-freightdisplay2 cursor-pointer"
-            >
-              Book a free consultation
-            </InViewMotion>
           </div>
         </div>
       </Container>

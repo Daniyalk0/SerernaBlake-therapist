@@ -28,7 +28,7 @@ const Navbar = () => {
         className="max-w-7xl px-4 flex items-center justify-between pb-8 sm:pb-10 sm:px-6 lg:pb-12 lg:px-2 xl:pb-11"
       >
         <Image
-          src={"/logo (2).png"}
+          src={"/yourLogo2.png"}
           width={300}
           height={100}
           className="w-[14rem] lg:w-[16rem]"
